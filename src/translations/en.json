@@ -1,0 +1,18 @@
+{
+  "common": {
+    "copyright": "ShinaBR2@DevChallenges.io",
+    "frontend": "Front end",
+    "blog": "Blog",
+    "hobbies": "Hobbies",
+    "experiences": "Experiences",
+    "projects": "Projects"
+  },
+  "components": {
+    "baseCard": {
+      "action": {
+        "demo": "Demo",
+        "code": "Code"
+      }
+    }
+  }
+}
