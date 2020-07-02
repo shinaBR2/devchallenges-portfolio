@@ -1,6 +1,8 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import Copyright from '../components/Copyright';
 import Summary from '../components/Cards/Summary';
 import BaseCard from '../components/Cards/BaseCard';
@@ -41,13 +43,21 @@ const Portfolio = () => {
     return (
       <React.Fragment>
         <BaseCard>
-          <FormattedMessage id="common.projects" />
+          <Typography component="h2" variant="h6">
+            <FormattedMessage id="common.projects" />
+          </Typography>
         </BaseCard>
-        {projects &&
-          projects.length &&
-          projects.map((project) => (
-            <ProjectItem key={project.id} project={project} />
-          ))}
+        <Box mt={2}>
+          <Grid container spacing={2}>
+            {projects &&
+              projects.length &&
+              projects.map((project) => (
+                <Grid key={project.id} item xs={12} sm={6} md={4}>
+                  <ProjectItem project={project} />
+                </Grid>
+              ))}
+          </Grid>
+        </Box>
       </React.Fragment>
     );
   };
@@ -70,7 +80,15 @@ const Portfolio = () => {
         </Box>
       </Box>
       {renderProject()}
-      <Copyright />
+      <Box
+        mt={12}
+        mb={4}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Copyright />
+      </Box>
     </Container>
   );
 };

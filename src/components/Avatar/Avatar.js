@@ -30,12 +30,12 @@ const useStyles = makeStyles((theme) => ({
 
 const Avatar = (props) => {
   const classes = useStyles(props);
-  const { src } = props;
+  const { src, alt = 'avatar' } = props;
 
   return (
     <div className={classes.root}>
       <div className={classes.content}>
-        <img className={classes.img} alt="profile" src={src} />
+        <img className={classes.img} alt={alt} src={src} />
       </div>
     </div>
   );

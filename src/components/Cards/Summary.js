@@ -16,7 +16,7 @@ const Summary = (props) => {
     <BaseCard>
       <Grid container wrap="nowrap">
         <Grid item container xs={3}>
-          <Avatar src={avatarURL} width="100%" />
+          <Avatar alt={name} src={avatarURL} width="100%" />
         </Grid>
         <Grid item container xs={9}>
           <Box pl={3}>

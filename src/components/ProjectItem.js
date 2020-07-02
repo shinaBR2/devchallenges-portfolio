@@ -1,9 +1,12 @@
 import React from 'react';
 // import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import BaseCard from './Cards/BaseCard';
 import { FormattedMessage } from 'gatsby-plugin-intl';
+
+import Avatar from './Avatar/Avatar';
 
 const ProjectItem = (props) => {
   const { project } = props;
@@ -11,10 +14,10 @@ const ProjectItem = (props) => {
   const renderButtons = () => {
     return (
       <React.Fragment>
-        <Button size="small">
+        <Button fullWidth variant="contained" color="primary">
           <FormattedMessage id="components.baseCard.action.demo" />
         </Button>
-        <Button size="small">
+        <Button fullWidth variant="outlined">
           <FormattedMessage id="components.baseCard.action.code" />
         </Button>
       </React.Fragment>
@@ -23,16 +26,24 @@ const ProjectItem = (props) => {
 
   return (
     <BaseCard action renderActions={renderButtons}>
-      <div>
-        <img src={img} alt={name} />
-      </div>
-      <div>
+      <Avatar src={img} alt={name} />
+      <Box my={3}>
         {tags &&
           tags.length &&
-          tags.map((tag) => <Typography key={tag}>{tag}</Typography>)}
-      </div>
-      <Typography>{name}</Typography>
-      <Typography>{description}</Typography>
+          tags.map((tag, index) => (
+            <Box px={1} pl={index === 0 ? 0 : 1} key={tag} display="inline">
+              <Typography component="span" variant="subtitle2">
+                {tag}
+              </Typography>
+            </Box>
+          ))}
+      </Box>
+      <Typography component="h3" variant="h5">
+        {name}
+      </Typography>
+      <Box mt={2}>
+        <Typography color="textSecondary">{description}</Typography>
+      </Box>
     </BaseCard>
   );
 };
