@@ -7,9 +7,13 @@
 // const config = require('gatsby-plugin-config').default;
 
 const siteMetadata = {
-  title: 'pure-frontend - Powerful project with just pure frontend techniques.',
+  title: 'ShinaBR2 - DevChallenges.io Portfolio',
+  titleTemplate: '%s · The Real Hero',
   author: 'ShinaBR2',
-  description: 'Powerful project with just pure frontend techniques.'
+  url: 'https://shinabr2-dcp.netlify.app',
+  description: 'Portfolio challenge solution at DevChallenges.io from ShinaBR2',
+  image: 'src/assets/images/share.png',
+  twitterUsername: 'ShinaBR2'
 };
 
 const formatPlugins = ['gatsby-plugin-eslint'];
@@ -21,10 +25,18 @@ const PWAPlugins = [
       name: 'pure-frontend',
       short_name: 'pure-frontend',
       start_url: '/',
-      background_color: '#663399',
-      theme_color: '#663399',
+      background_color: '#5C94E1',
+      theme_color: '#5C94E1',
       display: 'minimal-ui',
-      icon: 'src/assets/images/logo.png' // This path is relative to the root of the site.
+      icon: 'src/assets/images/logo.png',
+      icons: [
+        {
+          src: `/maskable_icon.png.png`,
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'any maskable'
+        }
+      ]
     }
   },
   'gatsby-plugin-offline'
