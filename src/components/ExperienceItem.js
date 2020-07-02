@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     position: 'relative',
-    width: '120px',
+    width: '100%',
     paddingBottom: '62%',
     borderRadius: theme.shape.borderRadius,
     marginBottom: theme.spacing(1),
@@ -33,14 +33,14 @@ const ExperienceItem = (props) => {
 
   return (
     <React.Fragment>
-      <Box style={{ width: '120px' }}>
+      <Grid item xs={3}>
         <div className={classes.wrapper}>
           <div className={classes.imgWrapper}>
             <img className={classes.img} alt={title} src={img} />
           </div>
         </div>
-      </Box>
-      <Box display="flex" flexWrap="wrap" flexGrow={1} pl={4}>
+      </Grid>
+      <Grid item container xs={9}>
         <Grid item xs={12}>
           <Typography variant="body2" color="textSecondary" gutterBottom>
             {duration}
@@ -52,7 +52,7 @@ const ExperienceItem = (props) => {
         <Box mt={4}>
           <Typography>{description}</Typography>
         </Box>
-      </Box>
+      </Grid>
     </React.Fragment>
   );
 };
