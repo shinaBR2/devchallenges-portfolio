@@ -79,11 +79,9 @@ export default function Shell(props) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
         <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
           rel="preload"
           as="style"
-          async
-          defer
         />
       </Helmet>
       <ThemeProvider theme={theme}>
