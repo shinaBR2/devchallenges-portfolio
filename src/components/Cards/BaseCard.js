@@ -1,14 +1,20 @@
 import React from 'react';
-// import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-// import Typography from '@material-ui/core/Typography';
-// import { FormattedMessage } from 'gatsby-plugin-intl';
 import { makeStyles } from '@material-ui/core/styles';
-// import { useTheme } from '@material-ui/core/styles';
-// import BaseCard from './BaseCard';
+
+const rootUseStyles = makeStyles({
+  root: {
+    display: 'flex',
+    minHeight: '100%',
+    flexDirection: 'column'
+  },
+  content: {
+    flex: 1
+  }
+});
 
 const useStyles = makeStyles({
   root: {
@@ -18,10 +24,11 @@ const useStyles = makeStyles({
 
 const BaseCard = (props) => {
   const { action = false, renderActions = null, title = '' } = props;
+  const rootClasses = rootUseStyles();
   const classes = useStyles();
 
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" className={rootClasses.root}>
       {title && (
         <CardHeader
           title={title}
@@ -32,7 +39,9 @@ const BaseCard = (props) => {
           classes={classes}
         />
       )}
-      <CardContent>{props.children}</CardContent>
+      <CardContent className={rootClasses.content}>
+        {props.children}
+      </CardContent>
       {action && renderActions && <CardActions>{renderActions()}</CardActions>}
     </Card>
   );
