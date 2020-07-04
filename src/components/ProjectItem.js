@@ -10,14 +10,27 @@ import Avatar from './Avatar/Avatar';
 
 const ProjectItem = (props) => {
   const { project } = props;
-  const { name, img, tags, description } = project;
+  const { name, img, tags, description, demoURL, sourceURL } = project;
   const renderButtons = () => {
     return (
       <React.Fragment>
-        <Button fullWidth variant="contained" color="primary">
+        <Button
+          href={demoURL}
+          target="_blank"
+          rel="noopener"
+          fullWidth
+          variant="contained"
+          color="primary"
+        >
           <FormattedMessage id="components.baseCard.action.demo" />
         </Button>
-        <Button fullWidth variant="outlined">
+        <Button
+          href={sourceURL}
+          target="_blank"
+          rel="noopener"
+          fullWidth
+          variant="outlined"
+        >
           <FormattedMessage id="components.baseCard.action.code" />
         </Button>
       </React.Fragment>

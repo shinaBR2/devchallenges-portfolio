@@ -1,22 +1,22 @@
 export const dummyPortfolioData = {
-  name: 'Billy Pearson',
+  name: 'ShinaBR2',
   avatarURL:
-    'https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-  title: 'Front-end developer',
+    'https://shinabr2.com/static/avatar-2e5e1c606f66e8fba0bfe06ffdab8734.jpg',
+  title: 'Frontend developer',
   description:
-    'Self-motivated developer, who is willing to learn and create outstanding UI applications. \nDonec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.',
-  email: 'billy@example.com',
-  phone: '(+603) 546 624 342',
+    'Perfectionist and passionate frontend developer, willing to learn and make good user experience products. \n I can make a totally new production ready product from scratch with understanding about architecture from backend to frontend side.',
+  email: 'ShinaBR2@gmail.com',
+  phone: '(+84) 37 914 8454',
   skills: [
+    {
+      id: 'mindset',
+      name: 'Product Mindset',
+      score: 75
+    },
     {
       id: 'react',
       name: 'React',
-      score: 66
-    },
-    {
-      id: 'javascript',
-      name: 'Javascript',
-      score: 84
+      score: 92
     },
     {
       id: 'css',
@@ -24,111 +24,105 @@ export const dummyPortfolioData = {
       score: 92
     },
     {
-      id: 'vue',
-      name: 'Vue',
-      score: 66
+      id: 'graphql',
+      name: 'GraphQL',
+      score: 85
     },
     {
-      id: 'redux',
-      name: 'Redux',
-      score: 84
-    },
-    {
-      id: 'reactNative',
-      name: 'React Native',
-      score: 92
+      id: 'devops',
+      name: 'DevOps',
+      score: 56
     }
   ],
   blogs: [
     {
       id: '004ba568-af44-4eb5-8b47-7bca467177e8',
-      title: 'How to organize your CSS',
+      title: 'GraphQL for children',
       img:
         'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
       description:
-        'In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.  \n Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.',
-      link: 'dev.to',
+        'In this article I tell a story about GraphQL, focus on how it helps working process become better, especially for frontend developers',
+      link: 'https://dev.to/shinabr2/graphql-for-children-5c9',
       typical: true
     }
   ],
   experiences: [
     {
       id: '08eb4015-f3a4-45fb-9b42-9c28a05f18a4',
-      title: 'Front-end developer',
+      title: 'Frontend developer',
       img:
-        'https://images.unsplash.com/photo-1522139137660-4248e04955b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80',
-      fromDate: 'Feb 2017',
-      toDate: null,
+        'https://static.wixstatic.com/media/ebb33e_7d7b553571d54104871f7402c6b2c915~mv2_d_2749_1384_s_2.png/v1/fill/w_140,h_70,al_c,q_85,usm_0.66_1.00_0.01/New%20Panalyt%20Logo.webp',
+      fromDate: 'May 2019',
+      toDate: 'now',
       description:
-        'Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.'
+        'Design reusable React components as a part of overal frontend development in a multi tenant world wide project, working with charts to show high traffic data to customers.'
     },
     {
       id: '6130e5ee-c021-4d16-9f07-4a55bba51ee7',
-      title: 'Full-stack developer',
-      img:
-        'https://images.unsplash.com/photo-1578952701098-5db58f884cfe?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      fromDate: 'Aug 2016',
-      toDate: 'Feb 2018',
+      title: 'Fullstack Developer',
+      img: 'https://www.visatree.in/dist/images/logo.png',
+      fromDate: 'Sep 2018',
+      toDate: 'April 2019',
       description:
-        'Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.'
+        'As a freelancer, contribute into building a sytem with hierarchical role like Human Resources management system beside some other projects.'
     }
   ],
   hobbies: [
+    {
+      id: 'reading',
+      name: 'Reading',
+      img:
+        'https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
+      description: 'Try to learn something new every day'
+    },
     {
       id: 'gaming',
       name: 'Gaming',
       img:
         'https://images.unsplash.com/photo-1564049489314-60d154ff107d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=761&q=80',
-      description: 'Quisque feugiat malesuada molestie.'
+      description: 'Everybody needs someway to relax'
     },
     {
-      id: 'cooking',
-      name: 'Cooking',
-      img:
-        'https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-      description: 'Quisque feugiat malesuada molestie.'
-    },
-    {
-      id: 'Biking',
-      name: 'Biking',
+      id: 'travel',
+      name: 'Travel',
       img:
         'https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80',
-      description: 'Quisque feugiat malesuada molestie.'
+      description: 'Travelling is like an adventure'
     }
   ],
   projects: [
     {
       id: '8188bca1-0309-4bc0-8a2f-2b359c08d79e',
-      name: 'Recipe Blog',
+      name: 'Ulala Pet Wiki',
       img:
-        'https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80',
-      tags: ['#HTML', '#CSS', '#responsive'],
+        'https://images.unsplash.com/photo-1565462905102-140e712045aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+      tags: ['#GatsbyJS'],
       description:
-        'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io',
-      demoURL: '',
+        'I just build everything. For now, my site has more than 200 active users daily.',
+      demoURL: 'https://shinabr2.com/ulala/',
       sourceURL: ''
     },
     {
       id: '14a9685d-cf5e-450f-9ff2-ca4ee13727a9',
-      name: 'My Gallery',
+      name: 'Pure Frontend',
       img:
         'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80',
-      tags: ['#HTML', '#CSS', '#responsive'],
+      tags: ['#Gatsby', '#Firebase', '#Apollo'],
       description:
-        'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io',
+        'A pure frontend, open source project with combination some of popular framework to get started with like GatsbyJS, Firebase, Apolo-client',
       demoURL: '',
-      sourceURL: ''
+      sourceURL: 'https://github.com/shinaBR2/pure-frontend'
     },
     {
       id: '1195a4ff-34e9-4d82-afa2-fc107c32f8bb',
-      name: 'My Gallery',
+      name: 'Portfolio Challenge',
       img:
         'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
       tags: ['#HTML', '#CSS', '#responsive'],
       description:
-        'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io',
-      demoURL: '',
-      sourceURL: ''
+        'Solution for this challenge from DevChallenges.io, open source',
+      demoURL: 'https://shinabr2-dcp.netlify.app/',
+      sourceURL: 'https://github.com/shinaBR2/devchallenges-portfolio'
     }
   ]
 };
