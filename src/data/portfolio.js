@@ -39,7 +39,7 @@ export const dummyPortfolioData = {
       id: '004ba568-af44-4eb5-8b47-7bca467177e8',
       title: 'GraphQL for children',
       img:
-        'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+        'https://images.unsplash.com/photo-1565538420870-da08ff96a207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
       description:
         'In this article I tell a story about GraphQL, focus on how it helps working process become better, especially for frontend developers',
       link: 'https://dev.to/shinabr2/graphql-for-children-5c9',
@@ -72,7 +72,7 @@ export const dummyPortfolioData = {
       id: 'reading',
       name: 'Reading',
       img:
-        'https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
+        'https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
       description: 'Try to learn something new every day'
     },
     {
