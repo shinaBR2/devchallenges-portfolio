@@ -4,7 +4,7 @@ export const dummyPortfolioData = {
     'https://shinabr2.com/static/avatar-2e5e1c606f66e8fba0bfe06ffdab8734.jpg',
   title: 'Frontend developer',
   description:
-    'Perfectionist and passionate frontend developer, willing to learn and make good user experience products. \n I can make a totally new production ready product from scratch with understanding about architecture from backend to frontend side.',
+    'Perfectionist and passionate frontend developer, willing to learn and make good user experience products. \n I can make a totally new production ready product from scratch with understanding about architecture from backend to frontend side. \nBeside from that, I am always seriously thinking about user experience and making better coding quality as well.',
   email: 'ShinaBR2@gmail.com',
   phone: '(+84) 37 914 8454',
   skills: [
